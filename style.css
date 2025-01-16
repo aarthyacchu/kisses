@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffe6e6;
+    color: #ff4d4d;
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars from appearing when emojis pop outside */
+    position: relative;
+    height: 100vh;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 10;
+    margin-top: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+    border: 1px solid #ff9999;
+    border-radius: 5px;
+  }
+  
+  #message {
+    color: #555;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .kiss {
+    position: absolute;
+    font-size: 30px;
+    animation: pop 0.5s ease forwards;
+  }
+  
+  @keyframes pop {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
